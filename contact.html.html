@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-------Navbar------->
+
+    <section class="subheader">
+        <nav>
+            <a href="index.html" class="logo"><img src="eduford_img/logo.png" alt="Logo"></a>
+            <div class="links" id="navlinks" > 
+                <i class="ri-close-fill" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html.html">About</a></li>
+                    <li><a href="course.html.html">Course</a></li>
+                    <li><a href="blog.html.html">Blog</a></li>
+                    <li><a href="contact.html.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="ri-menu-fill" onclick="showmenu()"></i>
+        </nav>
+       <h1 style="font-weight: 600;"  >Contact Us</h1>
+    </section>
+
+    <!----Ccontact Us---->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.6425706417986!2d-1.2643640243488776!3d51.75785919237692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2sUniversity%20of%20Oxford!5e0!3m2!1sen!2s!4v1695761552143!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contactus">
+        <div class="row">
+            <div class="contactcolumn">
+                <div>
+                    <i class="ri-home-fill"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Washington, UK</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-phone-fill"></i>
+                    <span>
+                        <h5>+09 12456879</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-mail-fill"></i>
+                    <span>
+                        <h5>infouni@gmail.com</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contactcolumn">
+           <form action="">
+             <input type="text" placeholder="Enter your name" required>
+             <input type="text" placeholder="Enter email address" required>
+             <input type="text" placeholder="Enter your subject" required>
+             <textarea rows="8"  placeholder="Message" required></textarea>
+             <button type="submit" class="firstbutton red">Send Message</button>
+           </form>
+
+
+            </div>
+        </div>
+    </section>
+
+  
+    <!-------Footer-------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse laboriosam laudantium, <br> voluptatum quas aperiam ullam voluptate. Dignissimos expedita labore asperiores atque?</p>
+        <div class="icons">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+        </div>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }   
+           </script>
+    
+    
+
+</body>
+</html>
